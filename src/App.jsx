@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/call-center-frontend"> {/* Añadir el basename */}
       <div className="flex flex-col h-screen bg-slate-900 print:bg-white">
         <div className="print:hidden">
           <Header />
@@ -22,12 +22,12 @@ function App() {
             <Sidebar />
           </div>
           <Routes>
-            <Route path="/call-center-frontend/" element={<HomePage />} />
-            <Route path="/call-center-frontend/register-call" element={<RegisterCallPage />} />
-            <Route path="/call-center-frontend/claim-tracking" element={<ClaimTrackingPage />} />
-            <Route path="/call-center-frontend/claim/:id" element={<ClaimDetailPage />} />
-            <Route path="/call-center-frontend/call-tracking" element={<CallTrackingPage />} />
-            <Route path="/call-center-frontend/customer-history" element={<CustomerHistoryPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/register-call" element={<RegisterCallPage />} />
+            <Route path="/claim-tracking" element={<ClaimTrackingPage />} />
+            <Route path="/claim/:id" element={<ClaimDetailPage />} />
+            <Route path="/call-tracking" element={<CallTrackingPage />} />
+            <Route path="/customer-history" element={<CustomerHistoryPage />} />
           </Routes>
         </div>
       </div>
