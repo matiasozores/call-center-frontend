@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const API_BASE_URL = 'http://localhost:8080/clients';
+const API_BASE_URL = 'https://web-production-fabf2.up.railway.app/clients';
 
 const CustomerSearch = ({ onCustomerSelect, onClear }) => {
   const [query, setQuery] = useState('');
