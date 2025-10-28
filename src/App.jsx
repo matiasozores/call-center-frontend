@@ -22,12 +22,12 @@ function App() {
             <Sidebar />
           </div>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/register-call" element={<RegisterCallPage />} />
-            <Route path="/claim-tracking" element={<ClaimTrackingPage />} />
-            <Route path="/claim/:id" element={<ClaimDetailPage />} />
-            <Route path="/call-tracking" element={<CallTrackingPage />} />
-            <Route path="/customer-history" element={<CustomerHistoryPage />} />
+            <Route path="/call-center-frontend/" element={<HomePage />} />
+            <Route path="/call-center-frontend/register-call" element={<RegisterCallPage />} />
+            <Route path="/call-center-frontend/claim-tracking" element={<ClaimTrackingPage />} />
+            <Route path="/call-center-frontend/claim/:id" element={<ClaimDetailPage />} />
+            <Route path="/call-center-frontend/call-tracking" element={<CallTrackingPage />} />
+            <Route path="/call-center-frontend/customer-history" element={<CustomerHistoryPage />} />
           </Routes>
         </div>
       </div>
