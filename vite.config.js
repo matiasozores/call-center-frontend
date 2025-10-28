@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/',  // Asegúrate de usar el nombre correcto de tu repositorio en GitHub
+  base: '/call-center-frontend/',
 })

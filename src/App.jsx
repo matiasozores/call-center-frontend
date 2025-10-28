@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router basename="/call-center-frontend"> {/* Añadir el basename */}
+    <Router>
       <div className="flex flex-col h-screen bg-slate-900 print:bg-white">
         <div className="print:hidden">
           <Header />
